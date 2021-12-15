@@ -1,0 +1,48 @@
+.grid-areasIndex{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sec1   sec1"
+    "sec2   sec3"
+    "sec4   sec4"
+    "footer footer"
+    ;
+    grid-template-columns: 45% auto;
+    row-gap: 1.4em;
+    
+}
+
+
+.containerS1 {
+    margin: 2.6em;
+    margin-bottom: .1em;
+}
+
+.containerS1-Text{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 1em;
+
+        p{
+            width: 30em;
+            margin-left: 1em;
+        }
+}
+
+
+.containerS2{
+    margin-left: 0.1em;
+    
+}
+
+.containerS2-Text{
+    width: 16em;
+}
+
+.containerS3-index{
+    display: flex;
+  
+    flex-direction: row;
+    margin-left: 2.5em;
+
+}

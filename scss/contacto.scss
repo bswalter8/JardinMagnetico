@@ -1,0 +1,46 @@
+.grid-areasCont{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sec1 sec2"
+    "sec1 sec3"
+    "footer footer"
+    ;
+    grid-template-columns: 50% auto;
+    row-gap: 2em;
+}  
+
+
+.sec1Contacto{
+    margin-right: 2em;
+    margin-left: 2em;
+   
+}
+
+.sec2Contacto{
+    
+    background-color: $fondo_negro;
+    width: 96%; 
+    p{
+        color: white;
+        margin-left: .2em;
+        font-size: .7em; 
+    }
+
+
+}
+
+
+
+.sec3Contacto{
+    
+    border-style: solid;
+    border-color: $fondo_negro;
+    width: 95%; 
+
+    p{
+        font-size: .7em; 
+        margin-left: .2em;
+    }
+
+}

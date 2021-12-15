@@ -1,0 +1,37 @@
+.grid-areasDiscos{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sec1 sec2 sec3"
+    "sec4 sec5 sec6"
+    "footer footer footer"
+    ;
+    row-gap: 1.4em;
+    grid-column-gap: .5em;
+    grid-template-columns: auto auto auto;
+    
+} 
+
+.secDiscos-black{
+    background-color: $fondo_negro;
+    font-size: .8em;
+    margin: 1em;
+
+    p{
+        color:white;
+        padding: .5em;
+    }
+}
+
+
+
+.secDiscos-white{
+    border-style: solid;
+    margin: .8em;
+
+    iframe{
+        margin-left: 2.5em;
+        margin-top: .5em;
+        width: 80%;
+    }
+}

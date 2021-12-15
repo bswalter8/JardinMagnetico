@@ -1,0 +1,40 @@
+.grid-areasVid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sec1"
+    "sec2"
+    "sec3"
+    "sec4"
+    "sec5"
+    "footer"
+    ;
+    row-gap: 1.4em;
+}    
+
+.containerS1-Vid {
+    @extend .containerS1;
+}
+
+.videosSec1-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 2em;
+    margin-left: 4em;
+    font-size: .8em;
+}
+
+.videosSec3-flex{
+    background-color:$fondo_negro;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: .8em;
+   
+    h2{
+        color: white;
+        font-size: 6em;
+    }
+}

@@ -1,0 +1,46 @@
+.containerFlecha{
+    margin-top: 2em;
+    width: 5em;
+    height: 5em;
+  
+    margin-left: 1em;
+    transition-duration: 300ms;
+  
+}
+
+.containerAnimacion:hover .flechaAnimacion{
+    transform: translate(0.5em);
+  
+}
+
+
+.containerMixer{    
+    width: 3.5em;
+    height: 3.5em;
+    position: fixed;    
+    margin-left: 90vw;  
+    margin-right: 5em;
+    z-index: 1;
+}
+
+.containerMixer:hover{
+    fill: rgb(214, 156, 156);
+}   
+
+
+.containerMixer-cat{   
+    @extend .containerMixer;
+}
+
+
+
+@keyframes fotosA {
+    from{
+        opacity: 0;
+    }
+
+    to{
+       opacity: 1;
+    }
+}
+
