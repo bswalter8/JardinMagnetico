@@ -2,13 +2,29 @@
     position: fixed;
     margin-left: 78vw;
    
-    z-index: 1;;
+}
+
+.mixerMenu{
+    width: 5em;
+    height: 5em;
+    margin-top: 4em;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    display: none;
+   -webkit-transition: opacity .5s ease;
+   -moz-transition: opacity .5s ease;
+    -ms-transition: opacity .5s ease;
+     -o-transition: opacity .5s ease;
+        transition: opacity .5s ease;
+        opacity: 0;
+   
     
+
 }
 
 .full-menu{
 	position: fixed;
 	top: 0;
+    z-index: 2;
 	right: -100%;
 	width: 100%;
 	height: 100%;
@@ -21,7 +37,7 @@
         height: 100%;
         justify-content: center;
         align-items: center;
-          
+        
  
         .navegacion{
             @media (max-width:414px){
@@ -38,20 +54,37 @@
             ul{
                 list-style: none;
                 text-align:center;
+                
                 div{
                     transition-duration: 700ms;
+                    
                     width: fit-content;
+                    flex-direction: row;  
+                       
                 }
                 
                 div:hover{
                     transform: translate(-2.5em);
+                    object{
+                       
+                        display: flex;
+                        
+                        filter: alpha(opacity=50);
+                        
+                             opacity: .8;
+                             -webkit-transition: opacity .5s ease;
+                            -moz-transition: opacity .5s ease;
+                            -ms-transition: opacity .5s ease;
+                            -o-transition: opacity .5s ease;
+                             transition: opacity .5s ease;
+                    } 
                 }
 
                 li{
                     margin: 2vh;
-                    
                     width: 10vw;
-                    height: 12vh;                   
+                    height: 12vh;  
+                    display: flex;       
                    
                     a{
                         
@@ -59,17 +92,13 @@
                         letter-spacing: 2px;
                         -webkit-font-smoothing: antialiased;
                         font-weight:lighter;
-                        
                         font-size: 9em;
                         text-transform: uppercase;
                         text-decoration: none;	
                         color: #fff;   
                     }
-                    a:hover{
-                        color: #eed8d8;
-                        
-                       
-                    }
+                  
+      
 
                 }
                 
@@ -80,4 +109,30 @@
 
 .close svg{
 	fill:white;
+    &:hover{
+        fill: $hover;   
+    }
+}
+
+.containerMixer{    
+    width: 3.5em;
+    height: 3.5em;
+    position: fixed;    
+   // margin-left: 90vw;  
+   // margin-right: 10vh;// 5em;
+   z-index: 3;
+   top: 3;
+   right: 2em;
+ 
+  
+}
+
+.containerMixer:hover{
+    fill: $hover;
+}   
+
+
+
+.containerMixer-cat{   
+    @extend .containerMixer;
 }

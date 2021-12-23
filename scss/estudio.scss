@@ -1,3 +1,8 @@
+@for $i from 1 through 11 {
+    #l#{$i} {
+        grid-area: l#{$i};
+    }
+  }
 
 .grid-areasEst{
     display: grid;
@@ -10,7 +15,7 @@
     "sec5"
     "footer"
     ;
-    row-gap: 1.4em;
+   // row-gap: 1.4em;
     width: 100%;
 }    
 
@@ -21,36 +26,102 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    
+    padding-top: 2em;
+    padding-bottom: 2em;
     font-size: .8em;
     margin-left: 13em;
+   //  margin-left: 3em;
+    margin-top: 2em;
    
     p{
-        margin-left: 20em;
+    //    margin-left: 20em;
+    margin-left: 30em;
         width: 30em;
         font-size: 1.3em;
     }   
 }
 
 
-
-
-
-.estudioSec3-flex{
-    background-color:$fondo_negro;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: .8em;
-   
-    h2{
-        color: white;
-        font-size: 6em;
+.serviciosText{
+    p{
+        font-size: 2.1em;
     }
 }
 
 
 
+.estudioSec3-flex{
+   background-color:$fondo_negro;
+   
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+   // justify-content: space-between;
+    font-size: .8em;
+    
+   
+    h2{
+        color: white;
+        font-size: 8em;
+        margin-top: .5em;
+        margin-left: 1.6em;
+        margin-bottom: .5em;
+    }
+
+    div{//grilla de marcas
+        margin-left: 10vw;
+        height: 60vh;
+        display: grid;   
+        grid-template-areas: 
+        "l1 l2  l3 l4"
+        "l5 l6  l7 l8"
+        "l9 l10 l11 l11"
+        ;
+        grid-template-columns:auto;
+        row-gap: 1em;
+       
+        div{
+            width: 10vw;
+            height: 10vh;
+            margin: 2em;
+            
+        }
+    }
+}
+
+.logo1{
+     
+}
+
+.logo2{
+    padding-top: 4em;
+}
+
+.logo5{ 
+    img{
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+
+}
+
+.logo8{
+  
+    padding-top: 2em;
+}
+
+.logo9{
+    justify-self: end;
+    
+}
+.logo10{
+    justify-self: end;
+    
+}
+
+.logo11{
+    justify-self: center;
+}
 
 .estudioSec4-flex{
     
@@ -90,11 +161,49 @@
    height: 40em;
    display: flex;
    justify-content: center;
+   z-index: -1;
    
    img{ 
     width: auto;
+    
     height: 40em;   
-  
+    justify-content: center;
+    
     }
 
+}
+
+.imgCar1{
+    margin-left: 12em;
+}
+
+.z-carrousel{
+    z-index: 0;
+}
+
+.footer-negro{
+    
+    background-color: $fondo_negro;
+    grid-area: footer;
+    margin: 0em;
+    padding-bottom:  20px;
+    font-family: 'Surt';
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;    
+    p{
+        margin-top: 2em;
+        color:rgba(255, 255, 255,144);
+        margin-left: 2em;
+    }    
+    a{
+        margin-top: 2em;
+        text-decoration: underline;
+        padding-right: 2em;
+        color: rgba(255, 255, 255,144);
+        
+    }
+    a:hover{
+        color: white;
+        }
 }

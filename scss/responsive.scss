@@ -33,8 +33,10 @@
 
     .containerMixer{
         position: fixed;
-        margin-top: -4vh;
-        margin-left: 75vw;     
+        /*margin-top: -6vh;
+        margin-left: 75vw;     */
+        margin-top: -4em;
+        margin-left: 26em; 
     }
 
     .containerMixer-cat{
@@ -56,7 +58,8 @@
         margin-top: 1em;
     }
 
-    footer{
+    .footer-blanco{
+        flex-direction: column;
         width: 30%;
     }
 
@@ -123,15 +126,18 @@
         margin: 0;
     }
     
-    .videosSec1-flex{
-        width: 85%;
+    
+
+
+    /*.videosSec1-flex{
+        width: 100%;
         margin-left: 3em;
     }
    
     .videosSec3-flex{
        height: 120%;
        margin-left: 3em;
-    }
+    }*/
 
     .sec2Contacto{
         margin-left: .35em;
@@ -195,7 +201,13 @@
     }   
 
 
-
+    .containerFlecha{
+        margin-top: -.6rem;
+        width: 4em;
+        height: 4em;
+        margin-left: 1em;
+        transition-duration: 300ms;  
+    }
 
    .containerS1{
     margin: 2.6em;
@@ -208,14 +220,14 @@
         margin-left: 0em;
     }
 
-    footer{
+    .footer-blanco{
         justify-content: space-between;
     }
 }
 
 //--------------------------Smartphone normal-----------------------------------------------------------------------------*/
 
-@media (min-width:321px) and (max-width:559px){
+@media (min-width:321px) and (max-width:599px){
     body{
         font-size: 0.5rem;
 
@@ -246,8 +258,10 @@
 
     .containerMixer{
         position: fixed;
-        margin-top: -4vh;
-        margin-left: 75vw;     
+       /* margin-top: -6vh;
+        margin-left: 80vw;     */
+        margin-top: -9.5em;
+        margin-left: 33em;
     }
 
     .containerMixer-cat{
@@ -273,8 +287,8 @@
 
 
     .containerFlecha{
-        margin-top: .6rem;
-     
+        margin-top: -.6rem;
+        
         margin-left: 1em;
         transition-duration: 300ms;  
     }
@@ -285,7 +299,7 @@
         margin-top: 1em;
     }
 
-    footer{
+    .footer-blanco{
         width: 30%;
     }
 
@@ -315,9 +329,11 @@
         width: 96vw !important;
     }
 
+    
 
-    footer{
+    .footer-blanco{
         justify-content: space-between;
+        flex-direction: column;
     }
 
     //ESTUDIO estilos
@@ -385,10 +401,10 @@
         padding-bottom: .2em;
     }
     
-    .videosSec3-flex{
+    /*.videosSec3-flex{
         height: 120%;
         margin-left: 3em;
-     }
+     }*/
  
      .sec2Contacto{
          margin-left: .35em;
@@ -454,8 +470,8 @@
 
 }
 
-//---------------------- PHONE posicion horizonta------------------------------------------------------------- */
-@media screen and (min-width: 600px) and (max-width: 767px) {
+//---------------------- PHONE posicion horizontal-------------------------------------------------------------
+@media screen and (min-width: 550px) and (max-width: 767px){
     header{
         display: flex;
         flex-direction: column;
@@ -469,13 +485,34 @@
             width: 100%;
             
         }  
+       
     }
-  }
+
+    .containerMixer{
+        position: fixed;
+       /* margin-top: -6vh;
+        margin-left: 80vw;     */
+        margin-top: -4.5em;
+        margin-left: 53em;
+    }
+
+    .containerMixer-cat{
+        
+        position: fixed; 
+        margin-top: 0;
+        margin-left: 75vw;
+       
+    }
+ 
 
 
+  } 
+
+
+  
 //*************Ipad---------------------------------------*/
 
-@media (min-width:600px) and (max-width:1200px){
+@media (min-width:600px) and (max-width:768px){
     body{
         font-size: 0.6rem;
 
@@ -503,8 +540,163 @@
         "sec4   sec4"
         "footer footer"
         ;      
-    row-gap: .4em; 
-    margin-left: 1em;
+        row-gap: .4em; 
+        margin-left: 1em;
+    
+    }
+
+    
+   .containerS1{
+    margin: 2.6em;
+    margin-bottom: .1em;
+    margin-left: 0em;
+   
+    }
+
+ 
+    
+    .containerS1-Text p{
+        width: 15em;
+        margin-left: 1em;
+    }
+
+    .containerMixer{
+        
+        position: fixed; 
+        /*margin-top: -6vh;
+        margin-left: 85vw;*/
+        margin-top: -9.5em;
+        margin-left: 50em;
+       
+    }
+    .containerMixer-cat{
+        
+        position: fixed; 
+        margin-top: 0;
+        margin-left: 85vw;
+       
+    }
+
+    .responsive{
+        width: 100vw !important;
+    }
+
+    .footer-blanco{
+        display: flex;
+      //  flex-direction: column;
+      //  width: 40%;
+        justify-content: space-between;
+    }
+
+
+     //ESTUDIO estilos*/
+
+
+     .estudioSec1-flex{
+        
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 10%;
+        font-size: .8em;
+        margin-left: 3.5em;
+       
+    }
+    
+    
+    
+    .estudioSec1-flex p{
+        margin-left: 0;        
+        width: 30em;   
+    }
+    
+    .estudioSec3-flex{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
+    }
+    
+    
+    .estudioSec3-flex h2{  //Seccion de equipos
+        
+        font-size: 6em;
+        margin-left: 1.7em;
+        width: 80%;
+    }
+    
+    .estudioSec4-flex{
+        
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 6em ;
+        font-size: 1.6em;
+       
+    }
+
+    
+    
+    .estudioServicios-flex{
+        
+        display: flex;
+        flex-direction: column;      
+        width: 90%;    
+        margin: 0;
+    }
+    
+    
+    .estudioSec4-flex h2{
+      
+        font-size: 5em;
+        padding-bottom: .2em;
+    }
+
+    .serviciosText{
+       
+        p{
+            font-size: 1.2em;
+        }
+        
+    }
+
+    
+
+}
+
+//*************Ipad Pro---------------------------------------
+
+@media (min-width:769px) and (max-width:1200px){
+    body{
+        font-size: 0.6rem;
+
+    }
+
+    header{
+        display: flex;
+        flex-direction: flow;
+        margin: 1em;
+        width: 70%;
+    }
+
+  
+    nav{
+        margin-top: 1em;
+    }
+
+   
+    .grid-areasIndex{
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "sec1   sec1"
+        "sec2   sec3"
+        "sec4   sec4"
+        "footer footer"
+        ;      
+        row-gap: .4em; 
+        margin-left: 1em;
     
     }
 
@@ -542,11 +734,12 @@
         width: 100vw !important;
     }
 
-    footer{
+    .footer-blanco{
         display: flex;
-        flex-direction: column;
-        width: 40%;
-        justify-content: space-between;
+      //  flex-direction: column;
+      //  width: 40%;
+      //  justify-content: space-between;
+      justify-content: space-between;
     }
 
 
@@ -614,10 +807,13 @@
         padding-bottom: .2em;
     }
 
-
+    .serviciosText{
+        p{
+            font-size: 1.4em;
+        }
+    }
 
 }
-
 
 
 // Large screens ----------- 

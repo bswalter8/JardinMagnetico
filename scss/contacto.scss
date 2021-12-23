@@ -14,19 +14,37 @@
 .sec1Contacto{
     margin-right: 2em;
     margin-left: 2em;
+    
+    img{
+        //height: 90vh;
+    } 
    
 }
 
 .sec2Contacto{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: $fondo_negro;
     width: 96%; 
+    
     p{
         color: white;
-        margin-left: .2em;
+        margin-left: .4em;
         font-size: .7em; 
+        
     }
-
+    a{
+        color: white;
+        font-size: .15em;
+        font-family: $titulo;
+        
+        padding: 2em;
+        
+    }
+    a:hover{
+        color: white;
+    }
 
 }
 
@@ -34,13 +52,24 @@
 
 .sec3Contacto{
     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-style: solid;
     border-color: $fondo_negro;
     width: 95%; 
-
     p{
+        margin-left: .3em;
         font-size: .7em; 
-        margin-left: .2em;
     }
+  
+}
 
+.sec3Links{
+    text-decoration: underline;
+    padding-left: 1.2em;
+    margin-bottom: 1.2em;
+    font-family: $titulo;
+    font-size: .15em;
+    font-family: $titulo;
 }

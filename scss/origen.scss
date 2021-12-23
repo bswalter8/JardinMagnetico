@@ -14,7 +14,9 @@
 *{
     margin: 0;
     padding: 0;
-    
+    a:hover{
+        color: black;
+    }
  }
 
 
@@ -47,10 +49,9 @@ header{
     
 }
 
-#sec1{
+/*#sec1{
     grid-area: sec1;
-   
-      
+        
  }
 
 #sec2 {
@@ -75,9 +76,13 @@ header{
 
 #sec5 {
     grid-area: sec5;
-}
+}*/
 
-
+@for $i from 1 through 5 {
+    #sec#{$i} {
+        grid-area: sec#{$i};
+    }
+  }
 
 
 
@@ -139,7 +144,7 @@ a{
 }
 
 
-footer{   
+.footer-blanco{   
     grid-area: footer;
     margin: 2em;
     padding-bottom:  20px;
@@ -149,8 +154,15 @@ footer{
     justify-content: space-between;        
     a{
         text-decoration: underline;
+        color: black;
+        :hover{
+        color: black;
+        }
     }
 }
+
+
+
 
  img{ 
      width: 100%;

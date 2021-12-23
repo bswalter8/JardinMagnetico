@@ -44,5 +44,21 @@
   
     flex-direction: row;
     margin-left: 2.5em;
+  
+}
 
+
+
+.alinearTexto{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alinearFlecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
