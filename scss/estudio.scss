@@ -158,11 +158,12 @@
 
 .containerCar{
    background-color: $fondo_negro;
-   height: 40em;
+   //height: 40em;
+   height: fit-content;
    display: flex;
    justify-content: center;
    z-index: -1;
-   
+   width: 100vw;
    img{ 
     width: auto;
     
@@ -174,7 +175,8 @@
 }
 
 .imgCar1{
-    margin-left: 12em;
+    //margin-left: 12em;
+    margin-left: 14vw;
 }
 
 .z-carrousel{
