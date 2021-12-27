@@ -233,12 +233,15 @@
   grid-template-areas: "header" "sec1" "sec2" "sec3" "sec4"  "footer";
   width: 100%; }
 
-.padding-TextoVideos {
-  padding-right: 2em;
+.padding-TextoVideos, .padding-TextoVideos2 {
+  margin-left: 8em;
   text-align: justify; }
   @media (min-width: 1200px) {
-    .padding-TextoVideos {
+    .padding-TextoVideos, .padding-TextoVideos2 {
       font-size: 1.6em; } }
+
+.padding-TextoVideos2 {
+  margin-left: 0; }
 
 .videosSec1-flex {
   display: flex;
@@ -407,7 +410,7 @@
           margin-left: 25%; } }
       @media (max-width: 400px) {
         .full-menu .wrap .navegacion {
-          margin-left: 20%; } }
+          margin-left: 24%; } }
       .full-menu .wrap .navegacion ul {
         list-style: none;
         text-align: center; }
@@ -449,7 +452,7 @@
                 font-size: 15em; } }
             @media (max-width: 600px) {
               .full-menu .wrap .navegacion ul li a {
-                font-size: 16em; } }
+                font-size: 14em; } }
 
 .close svg {
   fill: white; }
@@ -466,61 +469,6 @@
 
 .containerMixer:hover, .containerMixer-cat:hover {
   fill: rgba(129, 129, 129, 0.555); }
-
-/* variables */
-:root {
-  --black: #000;
-  --white: #fff;
-  --color-1: #000;
-  --gutter: 2rem;
-  /* this value is going to be changed by javascript */
-  --replace-offset: 50%;
-  --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
-  ; }
-
-/**
-  This is the interesting part
-**/
-/* align content above each other without absolute */
-.js-replace {
-  display: grid; }
-
-.js-replace__item {
-  grid-row: -1 / 1;
-  grid-column: -1 / 1;
-  overflow: hidden;
-  will-change: transform; }
-
-/* item to replace with */
-.js-replace__item {
-  transform: translateY(calc(var(--replace-offset) * 1)); }
-
-.js-replace__content {
-  /* fixes problem with calculating correct height in js */
-  border: 1px solid transparent;
-  will-change: transform;
-  transform: translateY(calc(var(--replace-offset) * -1)); }
-
-/* previous replace item*/
-.js-replace__item--active {
-  transform: translateY(calc(var(--replace-offset-2) * 1)); }
-
-.js-replace__item--active .js-replace__content {
-  transform: translateY(calc(var(--replace-offset-2) * -1)); }
-
-/* REVERSE ANIMATION */
-.js-replace--reverse .js-replace__item {
-  transform: translateY(calc(var(--replace-offset-2) * 1)); }
-
-.js-replace--reverse .js-replace__content {
-  transform: translateY(calc(var(--replace-offset-2) * -1)); }
-
-/* previous replace item*/
-.js-replace--reverse .js-replace__item--active {
-  transform: translateY(calc(var(--replace-offset) * 1)); }
-
-.js-replace--reverse .js-replace__item--active .js-replace__content {
-  transform: translateY(calc(var(--replace-offset) * -1)); }
 
 @media (max-width: 320px) {
   body {
@@ -568,6 +516,8 @@
     .estudioSec4-flex h2 {
       font-size: 5em;
       padding-bottom: .2em; }
+  .imgCar1 {
+    margin-left: 16vw; }
   .estudioServicios-flex {
     display: flex;
     flex-direction: column;
@@ -688,7 +638,7 @@
     justify-content: space-around; }
   .estudioSec3-flex h2 {
     font-size: 6em;
-    margin-left: 1.7em;
+    margin-left: 1.1em;
     width: 80%; }
   .estudioSec4-flex {
     display: flex;
@@ -696,6 +646,8 @@
     align-items: flex-start;
     margin-left: 6em;
     font-size: 1em; }
+  .imgCar1 {
+    margin-left: 19vw; }
   .estudioServicios-flex {
     display: flex;
     flex-direction: column;
@@ -833,7 +785,13 @@
   .secDiscos-black {
     margin-top: .8;
     margin-left: 2.4em;
-    margin-right: 2.4em; } }
+    margin-right: 2.4em; }
+  .grid-areasDiscos {
+    display: grid;
+    grid-template-areas: "header" "sec1" "sec4" "sec2" "sec5" "sec3" "sec6" "footer";
+    row-gap: .4em;
+    grid-column-gap: .5em;
+    grid-template-columns: auto; } }
 
 @media (min-width: 769px) and (max-width: 1200px) {
   body {
@@ -902,7 +860,13 @@
   .secDiscos-black {
     margin-top: .8;
     margin-left: 2.4em;
-    margin-right: 2.4em; } }
+    margin-right: 2.4em; }
+  .grid-areasDiscos {
+    display: grid;
+    grid-template-areas: "header" "sec1" "sec4" "sec2" "sec5" "sec3" "sec6" "footer";
+    row-gap: .4em;
+    grid-column-gap: .5em;
+    grid-template-columns: auto; } }
 
 @media only screen and (min-width: 1480px) {
   body {

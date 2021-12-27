@@ -104,6 +104,11 @@
         }
        
     }
+
+    .imgCar1{
+        
+        margin-left: 16vw;
+    }
     
     .estudioServicios-flex{
         
@@ -309,7 +314,7 @@
         margin-top: 1em;
     }
 
-    
+   
     
 
     header{
@@ -372,7 +377,7 @@
     .estudioSec3-flex h2{  //Seccion de equipos*/
         
         font-size: 6em;
-        margin-left: 1.7em;
+        margin-left: 1.1em;
         width: 80%;
     }
     
@@ -386,6 +391,11 @@
        
     }
 
+
+    .imgCar1{
+        
+        margin-left: 19vw;
+    }
     
     
     .estudioServicios-flex{
@@ -699,6 +709,26 @@
        
     }
 
+
+      //DISCOS grid-------
+
+      .grid-areasDiscos{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "sec1"
+        "sec4"
+        "sec2"
+        "sec5"
+        "sec3"
+        "sec6"
+        "footer"
+        ;
+        row-gap: .4em;
+        grid-column-gap: .5em;
+        grid-template-columns: auto;
+        
+    } 
     
 
 }
@@ -854,7 +884,25 @@
         margin-right: 2.4em;
        
     }
+      //DISCOS grid-------
 
+      .grid-areasDiscos{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "sec1"
+        "sec4"
+        "sec2"
+        "sec5"
+        "sec3"
+        "sec6"
+        "footer"
+        ;
+        row-gap: .4em;
+        grid-column-gap: .5em;
+        grid-template-columns: auto;
+        
+    } 
 
 
 }

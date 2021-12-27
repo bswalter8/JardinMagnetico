@@ -21,13 +21,18 @@
 
 
 .padding-TextoVideos{
-    padding-right: 2em;
+    margin-left: 8em;
     text-align: justify;
     @media (min-width:1200px){
     font-size: 1.6em;}
 
 }
 
+.padding-TextoVideos2{
+    @extend .padding-TextoVideos;
+    margin-left: 0;
+
+}
 
 .videosSec1-flex{
     display: flex;
