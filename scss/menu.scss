@@ -40,10 +40,13 @@
         
  
         .navegacion{
-            @media (max-width:414px){
-                margin-left: 35%;
+            @media (max-width:600px){
+                margin-left: 25%;
             }
-            margin-left: 45%;
+            @media (max-width:400px){
+                margin-left: 20%;
+            }
+            margin-left: 40%;
             margin-top: 2%;
             flex-basis: 0;
             flex-grow: 1;
@@ -97,6 +100,12 @@
                         letter-spacing: 2px;
                         -webkit-font-smoothing: antialiased;
                         font-weight:lighter;
+                        @media (max-width:1200px){
+                            font-size: 15em;;
+                         }
+                        @media (max-width:600px){
+                           font-size: 16em;;
+                        }
                         font-size: 9em;
                         text-transform: uppercase;
                         text-decoration: none;	
@@ -129,17 +138,16 @@
    //top: 3;
    top: 4em;
    right: 2em;
- 
+    
   
 }
 
 
 
 
-
-
 .containerMixer-cat{   
     @extend .containerMixer;
+
 }
 
     .containerMixer:hover{
@@ -147,3 +155,71 @@
     }   
     
 
+
+/* variables */
+:root {
+    --black: #000;
+    --white: #fff;
+    --color-1: #000;
+    --gutter: 2rem;
+    /* this value is going to be changed by javascript */
+    --replace-offset: 50%;
+    --replace-offset-2: calc((100% - var(--replace-offset) ) * -1)
+  }
+
+/**
+  This is the interesting part
+**/
+
+/* align content above each other without absolute */
+    .js-replace {
+        display: grid;
+    }
+  
+  .js-replace__item {
+    grid-row: -1 / 1;
+    grid-column: -1 / 1; 
+    overflow: hidden;
+    will-change: transform;
+  }
+  
+  /* item to replace with */
+  .js-replace__item {
+    transform: translateY(calc(var(--replace-offset) * 1));  
+  }
+  .js-replace__content {
+    /* fixes problem with calculating correct height in js */
+    border: 1px solid transparent; 
+    will-change: transform;
+  
+    transform: translateY(calc(var(--replace-offset) * -1));
+  }
+  
+  /* previous replace item*/
+  .js-replace__item--active {
+    transform: translateY(calc(var(--replace-offset-2) * 1));  
+  }
+  .js-replace__item--active .js-replace__content {
+    transform: translateY(calc(var(--replace-offset-2) * -1));  
+  }
+  
+  
+  /* REVERSE ANIMATION */
+  .js-replace--reverse 
+  .js-replace__item {
+    transform: translateY(calc(var(--replace-offset-2) * 1));  
+  }
+  .js-replace--reverse 
+  .js-replace__content {
+    transform: translateY(calc(var(--replace-offset-2) * -1));
+  }
+  
+  /* previous replace item*/
+  .js-replace--reverse 
+  .js-replace__item--active {
+    transform: translateY(calc(var(--replace-offset) * 1));  
+  }
+  .js-replace--reverse 
+  .js-replace__item--active .js-replace__content {
+    transform: translateY(calc(var(--replace-offset) * -1));
+  }

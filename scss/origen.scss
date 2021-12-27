@@ -49,34 +49,7 @@ header{
     
 }
 
-/*#sec1{
-    grid-area: sec1;
-        
- }
 
-#sec2 {
-    grid-area: sec2;
-
-  
-   
-}
-
-#sec3 {
-    grid-area: sec3;
-  
-  
-   
-}
-
-#sec4 {
-    grid-area: sec4;
-    
-   
-}
-
-#sec5 {
-    grid-area: sec5;
-}*/
 
 @for $i from 1 through 5 {
     #sec#{$i} {
@@ -144,21 +117,33 @@ a{
 }
 
 
-.footer-blanco{   
+
+
+.footer-blanco{
+    
+ 
     grid-area: footer;
-    margin: 2em;
+    margin: 0em;
     padding-bottom:  20px;
     font-family: 'Surt';
     font-size: 1.4em;
     display: flex;
-    justify-content: space-between;        
+    justify-content: space-between;    
+    p{
+        margin-top: 2em;
+        
+        margin-left: 2em;
+    }    
     a{
+        margin-top: 2em;
         text-decoration: underline;
-        color: black;
-        :hover{
+        padding-right: 2em;
+    
+        
+    }
+    a:hover{
         color: black;
         }
-    }
 }
 
 

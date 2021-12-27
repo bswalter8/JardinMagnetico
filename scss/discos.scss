@@ -18,8 +18,10 @@
 .secDiscos-black{
     background-color: $fondo_negro;
     font-size: .8em;
-    margin: 1em;
-
+    
+    margin-top: .8;
+    margin-left: 3em;
+    margin-right: 3em;
     p{
         color:white;
         padding: .5em;
@@ -31,6 +33,8 @@
 .secDiscos-white{
     border-style: solid;
     margin: .8em;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
 
     iframe{
         margin-left: 2.5em;

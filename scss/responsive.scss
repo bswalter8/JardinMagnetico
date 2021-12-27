@@ -31,22 +31,7 @@
     }
 
 
-     /*  .containerMixer{
-        position: fixed;
-       
-        margin-top: -4em;
-        margin-left: 26em; 
-    }
 
-    .containerMixer-cat{
-        
-        position: fixed; 
-        margin-top: 0;
-        margin-left: 75vw;
-       
-    }*/
-
-    
 
     .full-menu .navegacion{
         margin-left: 25%;
@@ -57,10 +42,7 @@
         margin-top: 1em;
     }
 
-    .footer-blanco{
-        flex-direction: column;
-        width: 30%;
-    }
+    
 
     .responsive{
         width: 95vw !important;
@@ -99,7 +81,7 @@
         flex-direction: column;
         justify-content: space-around;
 
-        h2{  /*Seccion de equipos*/
+        h2{  //Seccion de equipos*/
         
             font-size: 6em;
             margin-left: 1.7em;
@@ -146,11 +128,7 @@
         width: 95%;
         margin-left: 1.6em;
     }
-    /*
-    .videosSec3-flex{
-       height: 120%;
-       margin-left: 3em;
-    }*/
+    
 
     .sec2Contacto{
         margin-left: .35em;
@@ -233,11 +211,7 @@
         margin-left: 0em;
     }
 
-    .footer-blanco{
-        justify-content: space-between;
-    }
-
-    
+  
   
 
     .video-responsive{
@@ -282,9 +256,16 @@
     .header-Catflex{
         display: flex;
        
+       
     }
 
-    
+    .textoEstudio{
+        p{
+            font-size: 1.6em;
+            text-align: justify;
+            width: fit-content;
+        }
+    }
 
     .containerMixer{
         position: fixed;
@@ -328,10 +309,7 @@
         margin-top: 1em;
     }
 
-    .footer-blanco{
-        width: 30%;
-    }
-
+    
     
 
     header{
@@ -360,11 +338,7 @@
 
     
 
-    .footer-blanco{
-        justify-content: space-between;
-        flex-direction: column;
-    }
-
+   
     //ESTUDIO estilos
 
 
@@ -490,6 +464,15 @@
         
     }  
 
+    .secDiscos-black{
+       
+        
+        margin-top: .8;
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+       
+    }
+
       //Contacto GRID*/  
       .grid-areasCont{
         display: grid;
@@ -548,22 +531,15 @@
        
     }
 
-  /*  .containerMixer{
-        position: fixed;
-        margin-top: -6vh;
-        margin-left: 80vw;    
-        margin-top: -4.5em;
-        margin-left: 53em;
-    } */
 
-    .containerMixer-cat{
-        
-        position: fixed; 
-        margin-top: 0;
-        margin-left: 75vw;
-       
-    }
  
+    .textoEstudio{
+        p{
+            font-size: 2.2em;
+            text-align: justify;
+            
+        }
+    }
 
 
   } 
@@ -620,22 +596,7 @@
         margin-left: 1em;
     }
 
-  /*  .containerMixer{
-        
-        position: fixed; 
-        margin-top: -6vh;
-        margin-left: 85vw;
-        margin-top: -9.5em;
-        margin-left: 50em;
-       
-    }*/
-    .containerMixer-cat{
-        
-        position: fixed; 
-        margin-top: 0;
-        margin-left: 85vw;
-       
-    }
+ 
 
     .responsive{
         width: 100vw !important;
@@ -651,6 +612,14 @@
 
      //ESTUDIO estilos*/
 
+
+     .textoEstudio{
+        p{
+            font-size: 2.5em;
+            text-align: justify;
+            width: fit-content;
+        }
+    }
 
      .estudioSec1-flex{
         
@@ -721,6 +690,15 @@
         
     }
 
+    .secDiscos-black{
+       
+        
+        margin-top: .8;
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+       
+    }
+
     
 
 }
@@ -775,20 +753,7 @@
         margin-left: 1em;
     }
 
-  /*   .containerMixer{
-        
-        position: fixed; 
-       margin-top: 0vh;
-        margin-left: 85vw;
-       
-    }*/
-    .containerMixer-cat{
-        
-        position: fixed; 
-        margin-top: 0;
-        margin-left: 85vw;
-       
-    }
+ 
 
     .responsive{
         width: 100vw !important;
@@ -804,6 +769,14 @@
 
 
      //ESTUDIO estilos*/
+
+    .textoEstudio{
+        p{
+            font-size: 2.4em;
+            text-align: justify;
+            width: fit-content;
+        }
+    }
 
 
      .estudioSec1-flex{
@@ -873,12 +846,23 @@
         }
     }
 
+    .secDiscos-black{
+       
+        
+        margin-top: .8;
+        margin-left: 2.4em;
+        margin-right: 2.4em;
+       
+    }
+
+
+
 }
 
 
 // Large screens ----------- 
 @media only screen and (min-width : 1480px) {
-    /* Styles */
+   
 
     body{
         font-size: 1.2rem;

@@ -18,6 +18,17 @@
        
 }
 
+
+
+.padding-TextoVideos{
+    padding-right: 2em;
+    text-align: justify;
+    @media (min-width:1200px){
+    font-size: 1.6em;}
+
+}
+
+
 .videosSec1-flex{
     display: flex;
     flex-direction: row;
@@ -26,6 +37,8 @@
     margin: 2em;
     margin-left: 4em;
     font-size: .8em;
+    
+    margin-bottom: 5em;
     
 }
 
