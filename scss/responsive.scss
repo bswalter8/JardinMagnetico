@@ -299,7 +299,7 @@
         font-size: 4em;      
         
     }
-
+ 
 
     .containerFlecha{
         margin-top: -.6rem;
@@ -325,11 +325,16 @@
     margin: 2.6em;
     margin-bottom: .1em;
     width: 90%;
-   
+  
     }
-    .containerS1-Text p{
+    .containerS1-Text {
+        display: flex;
+        flex-direction: column;
+        p{
+       
         width: 15em;
-        margin-left: 1em;
+        margin-left: 0em;
+        }   
     }
 
     .containerS1-Vid{
@@ -342,7 +347,6 @@
     }
 
     
-
    
     //ESTUDIO estilos
 
@@ -481,6 +485,17 @@
         margin-left: 2.4em;
         margin-right: 2.4em;
        
+    }
+
+    .videosSec1-flex{
+     
+        flex-direction: column;
+       
+        
+    }
+
+    .padding-TextoVideos{
+        margin-left: 0;
     }
 
       //Contacto GRID*/  

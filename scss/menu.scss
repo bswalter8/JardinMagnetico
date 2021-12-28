@@ -56,7 +56,9 @@
         
             ul{
                 list-style: none;
-                text-align:center;
+                text-align: center;
+                
+               
                 
                 div{
                     transition-duration: 700ms;
@@ -90,6 +92,7 @@
 
                 li{
                     margin: 2vh;
+
                     width: 10vw;
                     height: 12vh;  
                     display: flex;       
@@ -101,12 +104,14 @@
                         -webkit-font-smoothing: antialiased;
                         font-weight:lighter;
                         @media (max-width:1200px){
-                            font-size: 15em;;
+                            font-size: 9em;;
+                            ;
                          }
                         @media (max-width:600px){
-                           font-size: 14em;;
+                           font-size: 10em;;
                         }
                         font-size: 9em;
+                        padding: 0;
                         text-transform: uppercase;
                         text-decoration: none;	
                         color: #fff;   
